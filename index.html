@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gautam Jha | Stock Market Learning</title>
+<meta name="description" content="Gautam Jha – stock market basics, chart reading aur daily market news simple Hindi mein. Free educational Telegram channel. Educational content only.">
+<meta name="theme-color" content="#0f1b3d">
+<meta property="og:title" content="Gautam Jha – Stock Market Learning">
+<meta property="og:description" content="Free educational Telegram channel. Educational content only, not investment advice.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://connect.facebook.net">
+<link rel="preconnect" href="https://t.me">
+
+<!-- ===== META PIXEL ===== -->
+<script>
+var PIXEL_ID = "1064158929575854";
+var TELEGRAM_LINK = "https://t.me/+WMwqYioaehAyNTc1";
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('set', 'autoConfig', false, PIXEL_ID); // Meta ke automatic button-click events band
+fbq('init', PIXEL_ID);
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1064158929575854&ev=PageView&noscript=1"></noscript>
+<!-- ===== END META PIXEL ===== -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0f1b3d;--navy2:#1c2d63;--saf:#ff8a1f;--saf2:#ff6a00;--ink:#14213d;--soft:#5b6478;--line:#e6e9f2;--bg:#f4f6fb;--green:#16a34a}
+html,body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto;min-height:100vh;min-height:100dvh;background:#fff;display:flex;flex-direction:column}
+
+.top{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:26px 20px 64px;text-align:center;position:relative;overflow:hidden}
+.top svg.bars{position:absolute;inset:auto 0 0 0;width:100%;height:70px;opacity:.18}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.4px;background:rgba(255,255,255,.12);padding:5px 12px;border-radius:99px}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--saf);animation:bl 1.4s infinite}
+@keyframes bl{50%{opacity:.3}}
+.top h1{margin-top:14px;font-size:34px;font-weight:900;letter-spacing:-.5px;line-height:1.05}
+.top h1 span{color:var(--saf)}
+.top p{margin-top:8px;font-size:15px;opacity:.9}
+
+.avatar{display:block;width:104px;height:104px;margin:-56px auto 0;border-radius:50%;object-fit:cover;background:#ddd;border:5px solid #fff;box-shadow:0 0 0 3px var(--saf),0 10px 26px rgba(15,27,61,.25);position:relative;z-index:2}
+
+.body{padding:18px 20px 24px;flex:1}
+.lead{text-align:center;font-size:16px;font-weight:700;line-height:1.45}
+.lead small{display:block;margin-top:4px;font-size:13.5px;font-weight:500;color:var(--soft)}
+
+.list{margin-top:18px;display:grid;gap:10px}
+.row{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fbfcff}
+.row .ic{flex:none;width:38px;height:38px;border-radius:11px;background:#fff1e3;display:flex;align-items:center;justify-content:center;font-size:19px}
+.row b{display:block;font-size:14.5px}
+.row span{font-size:12.5px;color:var(--soft)}
+
+.cta{margin-top:20px;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 14px;border-radius:14px;
+background:linear-gradient(90deg,var(--saf2),var(--saf));color:#fff;text-decoration:none;font-size:16px;font-weight:900;letter-spacing:.3px;white-space:nowrap;
+box-shadow:0 10px 22px rgba(255,106,0,.35);position:relative;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.cta svg{width:22px;height:22px;flex:none}
+.cta:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:sh 2.6s infinite}
+@keyframes sh{to{left:130%}}
+.cta:active{transform:scale(.98)}
+.free{margin-top:10px;text-align:center;font-size:12.5px;color:var(--soft)}
+.free b{color:var(--green)}
+
+.disc{margin-top:22px;padding:12px 14px;border-radius:12px;background:#f6f7fa;font-size:11.5px;line-height:1.55;color:var(--soft)}
+.links{margin-top:12px;text-align:center;font-size:12px}
+.links a{color:var(--navy2);font-weight:700}
+
+.modal{position:fixed;inset:0;z-index:50;background:rgba(15,27,61,.55);display:flex;align-items:flex-end;justify-content:center}
+.modal[hidden]{display:none}
+.mbox{width:100%;max-width:430px;max-height:85vh;overflow:auto;background:#fff;border-radius:20px 20px 0 0;padding:20px 18px 26px;position:relative;font-size:13.5px;line-height:1.55;color:var(--soft)}
+.mbox h2{color:var(--ink);font-size:19px}
+.mbox h3{color:var(--ink);font-size:14.5px;margin-top:14px}
+.mbox p{margin-top:4px}
+.mbox a{color:var(--navy2)}
+.mclose{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:0;background:#eef1f7;font-size:16px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.cta:after,.tag i{animation:none}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="top">
+    <span class="tag"><i></i>FREE TELEGRAM CHANNEL</span>
+    <h1>Gautam <span>Jha</span></h1>
+    <p>Stock market seekhiye, simple Hindi mein</p>
+    <svg class="bars" viewBox="0 0 400 70" preserveAspectRatio="none" aria-hidden="true">
+      <rect x="10" y="40" width="14" height="30" fill="#fff"/><rect x="40" y="28" width="14" height="42" fill="#fff"/>
+      <rect x="70" y="45" width="14" height="25" fill="#fff"/><rect x="100" y="20" width="14" height="50" fill="#fff"/>
+      <rect x="130" y="32" width="14" height="38" fill="#fff"/><rect x="160" y="12" width="14" height="58" fill="#fff"/>
+      <rect x="190" y="36" width="14" height="34" fill="#fff"/><rect x="220" y="18" width="14" height="52" fill="#fff"/>
+      <rect x="250" y="42" width="14" height="28" fill="#fff"/><rect x="280" y="8" width="14" height="62" fill="#fff"/>
+      <rect x="310" y="26" width="14" height="44" fill="#fff"/><rect x="340" y="14" width="14" height="56" fill="#fff"/>
+      <rect x="370" y="30" width="14" height="40" fill="#fff"/>
+    </svg>
+  </header>
+
+  <img class="avatar" src="data:image/webp;base64,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" alt="Gautam Jha" width="96" height="96" fetchpriority="high">
+
+  <section class="body">
+    <p class="lead">Beginners ke liye stock market learning community
+      <small>Basics se step-by-step, aasaan bhasha mein</small></p>
+
+    <div class="list">
+      <div class="row"><span class="ic">📘</span><div><b>Market Basics</b><span>Shares, index, IPO jaise concepts</span></div></div>
+      <div class="row"><span class="ic">📊</span><div><b>Chart Reading</b><span>Candlestick, trend, support-resistance</span></div></div>
+      <div class="row"><span class="ic">📰</span><div><b>Daily Market News</b><span>Kya hua aur kyun, simple explanation</span></div></div>
+      <div class="row"><span class="ic">🛡️</span><div><b>Risk Awareness</b><span>Market ke risk ko samajhna</span></div></div>
+    </div>
+
+    <a id="cta" class="cta" href="https://t.me/+WMwqYioaehAyNTc1" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M5.5 11.8l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5.1c.2-.2 0-.3-.4-.1l-6.9 4.4-3-.9c-.6-.2-.6-.6.1-.9z" fill="#ff6a00"/></svg>
+      JOIN FREE TELEGRAM CHANNEL
+    </a>
+    <p class="free">🔒 <b>100% Free</b> · Sirf education ke liye</p>
+
+    <p class="disc"><b>Disclaimer:</b> All content on this page and our Telegram channel is for educational and informational purposes only. It is not investment advice, a buy/sell recommendation or a tip. We are not a SEBI registered investment adviser or research analyst. Stock market investments are subject to market risk; please do your own research before making any financial decision.</p>
+    <p class="links"><a href="#" id="openPrivacy">Privacy Policy</a> · <a href="mailto:gautamjha.help@gmail.com">Contact</a></p>
+  </section>
+</main>
+
+<div class="modal" id="privacy" role="dialog" aria-modal="true" aria-labelledby="ppTitle" hidden>
+  <div class="mbox">
+    <button class="mclose" id="closePrivacy" aria-label="Close">✕</button>
+    <h2 id="ppTitle">Privacy Policy</h2>
+    <p><small>Last updated: October 2026</small></p>
+    <h3>About this page</h3>
+    <p>This page is operated by Gautam Jha. Its only purpose is to share information about our free, educational Telegram channel on the stock market.</p>
+    <h3>Information we collect</h3>
+    <p>We do not ask for your name, phone number, email address or payment details on this page. No forms are used.</p>
+    <h3>Cookies and Meta Pixel</h3>
+    <p>We use the Meta Pixel to measure how well our ads perform. It may use cookies and collect technical information such as browser type, device, IP address, pages visited and actions like clicking the join button. This is processed by Meta Platforms, Inc. under <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta's Privacy Policy</a>. We also store a small flag in your browser so the same click is not counted twice; it contains no personal information.</p>
+    <h3>Third-party services</h3>
+    <p>Clicking the join button takes you to Telegram. Telegram's own privacy policy applies once you leave this page.</p>
+    <h3>Your choices</h3>
+    <p>You can clear or block cookies in your browser settings, and control ad personalisation in your Facebook or Instagram <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener">Ad Preferences</a>.</p>
+    <h3>Educational content only</h3>
+    <p>All content is for educational purposes only and is not investment advice. We are not SEBI registered.</p>
+    <h3>Contact</h3>
+    <p>Email: <b>gautamjha.help@gmail.com</b></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var loadTime = Date.now();
+  var KEY = "gj_sub";
+  var cta = document.getElementById("cta");
+  var going = false;
+
+  function alreadyCounted(){
+    try{ if(localStorage.getItem(KEY)) return true; }catch(e){}
+    return /(?:^|; )gj_sub=1/.test(document.cookie);
+  }
+  function markCounted(){
+    try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){}
+    document.cookie = "gj_sub=1; max-age=" + (90*24*60*60) + "; path=/; SameSite=Lax";
+  }
+  function looksHuman(e){
+    if (navigator.webdriver) return false;          // automation browser
+    if (e && e.isTrusted === false) return false;   // script se kiya gaya click
+    if (Date.now() - loadTime < 1000) return false; // page khulne ke 1 sec ke andar click
+    return true;
+  }
+
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (going) return;
+    going = true;
+
+    if (looksHuman(e) && !alreadyCounted() && window.fbq){
+      var eid = "sub_" + Date.now() + "_" + Math.random().toString(36).slice(2,9);
+      fbq('track', 'Subscribe', {content_name: 'Gautam Jha Telegram'}, {eventID: eid});
+      markCounted();
+    }
+    // Event Meta tak pahunch jaaye, phir Telegram
+    setTimeout(function(){ window.location.href = TELEGRAM_LINK; }, 300);
+  });
+
+  // Back button se wapas aane par button phir kaam kare
+  window.addEventListener("pageshow", function(){ going = false; });
+
+  // Privacy modal
+  var pp = document.getElementById("privacy");
+  document.getElementById("openPrivacy").addEventListener("click", function(e){ e.preventDefault(); pp.hidden = false; });
+  document.getElementById("closePrivacy").addEventListener("click", function(){ pp.hidden = true; });
+  pp.addEventListener("click", function(e){ if (e.target === pp) pp.hidden = true; });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") pp.hidden = true; });
+})();
+</script>
+</body>
+</html>
